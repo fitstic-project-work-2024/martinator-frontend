@@ -1,3 +1,5 @@
+// Author: Sbenduel
+
 export const Navbar = () => {
   return (
     <nav className=" bg-[#112d4e] px-4 sm:px-8 lg:px-20 relative flex items-center justify-between h-16">
