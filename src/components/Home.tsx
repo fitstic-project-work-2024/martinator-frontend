@@ -1,7 +1,10 @@
-import React from 'react'
+import { Searchbox } from "./Searchbox";
 
 export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <div>Home</div>
+      <Searchbox />
+    </>
+  );
+};
