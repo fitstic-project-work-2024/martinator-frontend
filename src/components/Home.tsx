@@ -5,7 +5,6 @@ export const Home = () => {
   const cards = [<VideocameraCard />];
   return (
     <>
-      <Searchbox />
       <div className="flex justify-center">
         {/* Se ci sta solo una card, la centra */}
         <div
