@@ -1,5 +1,7 @@
 // Author: Sbenduel
 
+import { Link } from "react-router-dom";
+
 export const Navbar = () => {
   //Lista stub di link per la navigazione, current indica la pagina attuale
   const navigation = [
@@ -29,9 +31,9 @@ export const Navbar = () => {
         />
         <div className=" lg:flex hidden text-white space-x-4 ml-8">
           {navigation.map((item) => (
-            <a
+            <Link
               key={item.name}
-              href={item.href}
+              to={item.href}
               className={classNames(
                 item.current
                   ? "bg-[#12396b] text-white"
@@ -41,7 +43,7 @@ export const Navbar = () => {
               aria-current={item.current ? "page" : undefined}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

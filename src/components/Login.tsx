@@ -1,4 +1,6 @@
 // Autor: Sbenduel
+import { Link } from "react-router-dom";
+
 export const Login = () => {
   return (
     <div className="flex items-center justify-center pt-8">
@@ -26,9 +28,12 @@ export const Login = () => {
               required
               placeholder="Password"
             ></input>
-            <a href="#" className="block text-right text-xs text-[#4F709C]">
-              Password dimenticata? Fatti un altro account
-            </a>
+            <p className="block text-right text-xs">
+              Password dimenticata?
+              <Link to="/register" className="text-[#4F709C]">
+                Fatti un altro account
+              </Link>
+            </p>
           </div>
           <button
             type="submit"

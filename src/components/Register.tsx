@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // Autor: Smanuel
 export const Register = (props: any) => {
   return (
@@ -27,9 +29,6 @@ export const Register = (props: any) => {
               required
               placeholder="Password"
             ></input>
-            <a href="#" className="block text-right text-sm text-[#4F709C]">
-              Password dimenticata? Fatti un altro account
-            </a>
           </div>
           <button
             type="submit"
@@ -40,10 +39,10 @@ export const Register = (props: any) => {
         </form>
         <div className="text-center">
           <p className="text-sm text-neutral-600">
-            Hai già un account?{" "}
-            <a href="#" className="text-[#4F709C]">
+            Hai già un account?
+            <Link to="/login" className="text-[#4F709C]">
               Vai al login
-            </a>
+            </Link>
           </p>
         </div>
       </div>
