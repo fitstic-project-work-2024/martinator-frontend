@@ -1,11 +1,11 @@
 import { Searchbox } from "./Searchbox";
+
 import { VideocameraCard } from "./VideocameraCard";
 
 export const Home = () => {
   const cards = [<VideocameraCard />];
   return (
     <>
-      <div>Home</div>
       <Searchbox />
       <div className="flex justify-center">
         {/* Se ci sta solo una card, la centra */}

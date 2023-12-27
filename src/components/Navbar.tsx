@@ -4,9 +4,9 @@ export const Navbar = () => {
   //Lista stub di link per la navigazione, current indica la pagina attuale
   const navigation = [
     { name: "Home", href: "#", current: true },
-    { name: "PlaceHolder", href: "#", current: false },
-    { name: "PlaceHolder", href: "#", current: false },
-    { name: "PlaceHolder", href: "#", current: false },
+    { name: "PlaceHolder1", href: "#", current: false },
+    { name: "PlaceHolder2", href: "#", current: false },
+    { name: "PlaceHolder3", href: "#", current: false },
   ];
 
   //Funzione per capire se una classe merita il css true o false durante il rendering
@@ -34,9 +34,9 @@ export const Navbar = () => {
               href={item.href}
               className={classNames(
                 item.current
-                  ? "bg-[#4F709C] text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
+                  ? "bg-[#12396b] text-white"
+                  : "text-gray-300 hover:bg-[#0B1D32] hover:text-white",
+                "block rounded-md px-3 py-2 text-base Gelion font-bold"
               )}
               aria-current={item.current ? "page" : undefined}
             >
@@ -45,19 +45,14 @@ export const Navbar = () => {
           ))}
         </div>
       </div>
-      <button
-        type="button"
-        className="bg-[#F4F4F4] hover:bg-[#FCD94F] text-[#112d4e] font-bold py-2 px-4 rounded"
-      >
-        Login
-      </button>
-      <div className="lg:hidden block">
-        <button>
-          <img
-            className="w-auto h-fit"
-            src={"public/imgs/hamburgerMenu.svg"}
-            alt="Hamburger Menu"
-          />{" "}
+
+      <div className="lg:block md:hidden">
+        <button
+          type="button"
+          className="text-white Gelion font-bold py-2 px-4 rounded-lg hover:bg-[#0B1D32]"
+        >
+          Login 
+          <i className="fa-solid fa-right-to-bracket"></i>
         </button>
       </div>
     </nav>
