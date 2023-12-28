@@ -6,23 +6,16 @@ import { Login } from "./components/Login";
 import { Register } from "./components/Register";
 
 export const App = () => {
-  const routes = [
-    { name: "Home", path: "/", component: <Home /> },
-    { name: "Register", path: "/register", component: <Register /> },
-    { name: "Login", path: "/login", component: <Login /> },
-  ];
-
   return (
     <>
       <TestNavbar />
       <Routes>
-        {routes.map((route) => (
-          <Route
-            path={route.path}
-            element={route.component}
-            key={route.name}
-          ></Route>
-        ))}
+        <Route path="/" element={<Home />}>
+          <Route path=":id" element="DetailCamera" />
+          <Route path="favorites" element="FavoriteCamera" />
+        </Route>
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );
