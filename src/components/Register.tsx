@@ -1,5 +1,5 @@
 // Autor: Smanuel
-export const Register = (props: any) => {
+export const Register = (/*props: any*/) => {
   return (
     <div className="flex items-center justify-center pt-8">
       <div className="max-w-[34rem] w-full p-[4rem] bg-white rounded-lg shadow-lg">

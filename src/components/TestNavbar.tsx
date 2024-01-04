@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export const TestNavbar = () => {
   //Lista stub di link per la navigazione, current indica la pagina attuale
